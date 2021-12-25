@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#2e000000"
+    android:layoutDirection="ltr">
+
+    <com.leo.simplearcloader.SimpleArcLoader
+        android:id="@+id/simple_arc_loader_exo"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:arc_colors="@array/colors_load"
+        app:arc_style="simple_arc"
+        app:arc_speed="medium"
+        app:arc_margin="3dp">
+    </com.leo.simplearcloader.SimpleArcLoader>
+
+
+    <ImageView
+        android:padding="00dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_width="60dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_play"
+        android:id="@+id/exo_play"
+        android:layout_height="60dp" />
+    <ImageView
+        android:padding="00dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_width="60dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_pause"
+        android:id="@+id/exo_pause"
+        android:layout_height="60dp" />
+
+</RelativeLayout>
